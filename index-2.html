@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AGRI-BOT: a multifunctional agricultural robot concept for seed sowing, water spraying, weed removal and smart farming.">
+<title>AGRI-BOT | Smart Farming Robotics</title>
+<style>
+:root{--bg:#071711;--panel:#10251c;--panel2:#163326;--green:#8be28e;--lime:#c5f6a7;--text:#f3f7f0;--muted:#bdcdbf;--line:#2a4a37;--gold:#f2cf79}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(ellipse at top right,#173c27 0,transparent 40%),var(--bg);color:var(--text);line-height:1.65}
+a{color:var(--lime)}.wrap{width:min(1120px,92%);margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px}.brand{font-weight:900;letter-spacing:2px;font-size:1.15rem}.brand span{color:var(--green)}.nav a{font-size:.9rem;text-decoration:none;margin-left:15px;color:var(--muted)}.hero{padding:64px 0 54px;display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:center}.eyebrow{display:inline-block;border:1px solid #477652;border-radius:99px;padding:5px 12px;color:var(--lime);font-size:.8rem;letter-spacing:1.4px;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,7vw,5.4rem);line-height:.98;margin:18px 0}.hero h1 em{font-style:normal;color:var(--green)}.lead{font-size:1.08rem;color:var(--muted);max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.btn{display:inline-block;padding:11px 17px;border-radius:12px;background:var(--green);color:#082012;text-decoration:none;font-weight:800}.btn.secondary{background:transparent;color:var(--text);border:1px solid #5a8062}.robot-card{border:1px solid var(--line);border-radius:26px;padding:24px;background:linear-gradient(145deg,#183a28,#0c1e15);box-shadow:0 22px 60px #0004}.robot-art{width:100%;height:auto;display:block}.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}.tag{border:1px solid #41664a;border-radius:99px;padding:5px 10px;color:var(--lime);font-size:.78rem}.section{padding:54px 0}.section-head{max-width:760px;margin-bottom:26px}.kicker{color:var(--green);text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800}.section h2{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.1;margin:9px 0 12px}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:linear-gradient(160deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:18px;padding:21px}.icon{font-size:1.65rem}.card h3{margin:8px 0}.card p{color:var(--muted);margin:0}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.steps{counter-reset:step;display:grid;gap:12px}.step{display:grid;grid-template-columns:42px 1fr;gap:13px;padding:15px;border:1px solid var(--line);border-radius:14px;background:#0d2117}.num{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#285b35;color:var(--lime);font-weight:900}.step h3{margin:0 0 4px}.step p{margin:0;color:var(--muted)}.pill{display:inline-block;background:#213e2b;color:var(--lime);border-radius:7px;padding:3px 8px;font-size:.78rem;margin:3px}.note{border-left:3px solid var(--gold);padding:12px 15px;background:#292719;color:#f5e8bd;border-radius:0 12px 12px 0}.reference{overflow-wrap:anywhere}.reference a{display:inline-block;margin-top:8px}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.toplink{float:right;text-decoration:none}.small{font-size:.88rem}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:35px}.grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.nav{align-items:flex-start;flex-direction:column}.nav div:last-child{display:flex;flex-wrap:wrap;gap:8px}.nav a{margin:0 12px 0 0}.section{padding:40px 0}.robot-card{padding:16px}}
+</style>
+</head>
+<body>
+<header class="wrap nav">
+  <div class="brand">◈ <span>AGRI</span>-BOT</div>
+  <div><a href="#features">Features</a><a href="#system">System</a><a href="#research">Research</a><a href="#future">Future scope</a></div>
+</header>
+<main>
+<section class="wrap hero">
+  <div>
+    <span class="eyebrow">Multifunctional Agricultural Robotics</span>
+    <h1>Smarter farming.<br><em>Less manual work.</em></h1>
+    <p class="lead">AGRI-BOT is a prototype concept designed to bring multiple routine farming tasks into one mobile platform: seed sowing, water spraying and weed-removal assistance, with microcontroller-based control and a path toward safer autonomous operation.</p>
+    <div class="actions"><a class="btn" href="#features">Explore features ↓</a><a class="btn secondary" href="#research">Research & references</a></div>
+    <div class="tagrow"><span class="tag">ESP32 control</span><span class="tag">Smart agriculture</span><span class="tag">Modular design</span></div>
+  </div>
+  <div class="robot-card">
+    <svg class="robot-art" viewBox="0 0 500 360" role="img" aria-label="Illustration of a small agricultural robot with wheels, seed hopper and spray tank">
+      <defs><linearGradient id="body" x1="0" x2="1"><stop stop-color="#a8ef9e"/><stop offset="1" stop-color="#3b9c5b"/></linearGradient></defs>
+      <circle cx="250" cy="175" r="132" fill="#1b4b2d" opacity=".45"/>
+      <path d="M75 290 Q250 320 425 290" fill="none" stroke="#49754d" stroke-width="3" stroke-dasharray="7 9"/>
+      <g transform="translate(0 5)">
+        <rect x="103" y="190" width="294" height="67" rx="18" fill="#1b3d29" stroke="#8be28e" stroke-width="3"/>
+        <rect x="132" y="164" width="235" height="53" rx="12" fill="url(#body)"/>
+        <rect x="154" y="177" width="76" height="25" rx="6" fill="#0b2114"/>
+        <text x="192" y="194" text-anchor="middle" font-size="12" font-weight="bold" fill="#c5f6a7">AGRI-BOT</text>
+        <rect x="254" y="111" width="78" height="60" rx="12" fill="#80cce2" stroke="#d2f6ff" stroke-width="3"/>
+        <path d="M260 126 Q293 113 326 126" fill="none" stroke="#d2f6ff" stroke-width="2"/>
+        <rect x="265" y="101" width="56" height="12" rx="5" fill="#e6f7ff"/>
+        <path d="M292 101 V84 H349 V106" fill="none" stroke="#c5f6a7" stroke-width="5" stroke-linecap="round"/>
+        <path d="M344 106 l-8 14 M349 106 l0 16 M354 106 l8 14" stroke="#80cce2" stroke-width="4" stroke-linecap="round"/>
+        <path d="M150 163 L150 132 L201 132 L201 163" fill="#d8bd79" stroke="#f8e7ad" stroke-width="3"/>
+        <path d="M150 132 L175 108 L201 132 Z" fill="#b58b42" stroke="#f8e7ad" stroke-width="3"/>
+        <circle cx="138" cy="260" r="36" fill="#0b120d" stroke="#6e9273" stroke-width="7"/><circle cx="138" cy="260" r="13" fill="#a4c4a4"/>
+        <circle cx="362" cy="260" r="36" fill="#0b120d" stroke="#6e9273" stroke-width="7"/><circle cx="362" cy="260" r="13" fill="#a4c4a4"/>
+        <path d="M186 257 V287 M215 257 V287 M244 257 V287" stroke="#d8bd79" stroke-width="5" stroke-linecap="round"/>
+        <path d="M174 289 Q215 305 257 289" fill="none" stroke="#f8e7ad" stroke-width="4"/>
+        <path d="M92 180 L65 165 M408 180 L435 165" stroke="#8be28e" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g fill="#c5f6a7"><circle cx="76" cy="91" r="4"/><circle cx="414" cy="99" r="5"/><circle cx="392" cy="54" r="3"/><circle cx="104" cy="54" r="3"/></g>
+    </svg>
+    <p class="small muted">Concept illustration — not a photograph of the physical prototype.</p>
+  </div>
+</section>
+
+<section class="section" id="overview">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">01 / Overview</span><h2>One platform, multiple field tasks</h2><p class="muted">The project explores how a compact, modular robot can assist small-scale farming. The final performance depends on the mechanical design, field conditions, calibration and testing.</p></div>
+    <div class="grid">
+      <article class="card"><div class="icon">🌱</div><h3>Seed sowing</h3><p>A seed dispenser is intended to release seeds at planned intervals. Seed spacing and depth require calibration for the chosen crop.</p></article>
+      <article class="card"><div class="icon">💧</div><h3>Water spraying</h3><p>A tank, pump and spray nozzle provide controlled water delivery to a selected area, helping avoid unnecessary spraying.</p></article>
+      <article class="card"><div class="icon">🌿</div><h3>Weed removal</h3><p>A mechanical weeding attachment is designed to assist removal of weeds. It needs crop-safe positioning and field testing.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="features">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">02 / Features</span><h2>Designed for practical farm assistance</h2></div>
+    <div class="grid">
+      <article class="card"><div class="icon">📶</div><h3>Wireless control</h3><p>ESP32-based Wi-Fi control can support manual commands from a phone or browser interface.</p></article>
+      <article class="card"><div class="icon">🛞</div><h3>Mobile chassis</h3><p>A four-wheel chassis carries the payload and tools. Traction, ground clearance and stability should be checked on the target soil.</p></article>
+      <article class="card"><div class="icon">🧭</div><h3>Obstacle awareness</h3><p>A distance sensor can provide a safety input to slow or stop the robot when an obstacle is detected.</p></article>
+      <article class="card"><div class="icon">🔧</div><h3>Modular attachments</h3><p>Seed, spray and weeding units can be mounted as separate modules for maintenance and testing.</p></article>
+      <article class="card"><div class="icon">🔋</div><h3>Power monitoring</h3><p>Battery voltage monitoring can help the operator understand power status during field operation.</p></article>
+      <article class="card"><div class="icon">🧪</div><h3>Prototype-first approach</h3><p>Each function can be tested independently before combining functions into a full field workflow.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="system">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">03 / System design</span><h2>Components and working principle</h2><p class="muted">The list below reflects the described AGRI-BOT prototype concept. Confirm the final bill of materials against the hardware actually assembled.</p></div>
+    <div class="two">
+      <div class="card">
+        <h3>Main components</h3>
+        <p><span class="pill">ESP32 microcontroller</span><span class="pill">BTS7960 motor driver</span><span class="pill">DC geared motors</span><span class="pill">Relay module</span><span class="pill">Ultrasonic distance sensor</span><span class="pill">Seed dispenser</span><span class="pill">Water tank and pump</span><span class="pill">Weeding mechanism</span><span class="pill">Battery supply</span></p>
+        <p class="small muted" style="margin-top:12px">Optional or future components: AI camera, GPS, solar charging and crop-monitoring sensors.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="num">1</div><div><h3>Receive a command</h3><p>The operator selects a movement or task using the wireless control interface.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Process and drive</h3><p>The ESP32 processes the command and controls the motor driver and task outputs.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Perform the selected task</h3><p>The relevant seed, spray or weeding mechanism is activated according to the control logic.</p></div></div>
+        <div class="step"><div class="num">4</div><div><h3>Check safety inputs</h3><p>The distance sensor can trigger a stop response when an obstacle is within the configured threshold.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">04 / Literature review</span><h2>Research that informs the concept</h2><p class="muted">These papers provide background for agricultural automation. They are related research, not proof that every AGRI-BOT feature has already been validated.</p></div>
+    <div class="card reference">
+      <h3>1. Autonomous Farming Robot for Precision Seed Sowing and Targeted Irrigation Using Wireless Control</h3>
+      <p class="muted">Shilpa Lambor, Purva Sarvade, Ninad Kamat, Omkar Tongare, and Rahul Lade. Published in the 2024 8th International Conference on Electronics, Communication and Aerospace Technology (ICECA), IEEE.</p>
+      <p><strong>Relevance:</strong> Wireless control, precision seed sowing and targeted irrigation are closely related to AGRI-BOT's planned seed and water modules.</p>
+      <a href="https://doi.org/10.1109/ICECA63461.2024.10800769" target="_blank" rel="noopener noreferrer">Open paper via DOI ↗</a>
+    </div>
+    <div class="card reference" style="margin-top:14px">
+      <h3>2. Task-Based Agricultural Mobile Robots in Arable Farming: A Review</h3>
+      <p class="muted">A review of agricultural mobile robotics and task-oriented field automation.</p>
+      <p><strong>Relevance:</strong> Useful background for comparing robot functions, mobile platforms and field-task automation.</p>
+      <a href="https://doi.org/10.5424/sjar/2017151-9573" target="_blank" rel="noopener noreferrer">Open paper via DOI ↗</a>
+    </div>
+    <div class="note small" style="margin-top:16px"><strong>Academic note:</strong> Check each paper's full metadata and read its abstract or full text before quoting results. Add further references only after verifying their titles, authors, year and DOI.</div>
+    <h3 style="margin-top:26px">Literature review summary</h3>
+    <p class="muted">Existing agricultural robotics research explores task automation such as seed placement, irrigation, weeding and wireless operation. Inspired by these areas, AGRI-BOT brings multiple farm-assistance mechanisms into one prototype and uses an ESP32-based control system. The project focuses on modular construction and practical testing; measurable benefits such as time saved, water use and task accuracy should be established through controlled experiments.</p>
+  </div>
+</section>
+
+<section class="section" id="future">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">05 / Future scope</span><h2>From prototype to smarter field operation</h2></div>
+    <div class="grid">
+      <article class="card"><div class="icon">📷</div><h3>AI crop monitoring</h3><p>Add a camera and computer-vision model to monitor crop condition or identify visible plant stress, after collecting suitable data.</p></article>
+      <article class="card"><div class="icon">🛰️</div><h3>Autonomous navigation</h3><p>Explore GPS, row-following sensors or mapping for planned movement, with emergency stop and obstacle checks.</p></article>
+      <article class="card"><div class="icon">☀️</div><h3>Solar-assisted charging</h3><p>Evaluate a solar charging system based on the robot's measured power demand, battery chemistry and safe charge controller requirements.</p></article>
+      <article class="card"><div class="icon">📊</div><h3>Field data dashboard</h3><p>Record task status, battery level, distance travelled and water usage for later analysis.</p></article>
+      <article class="card"><div class="icon">🎯</div><h3>Precision application</h3><p>Use crop-row detection and calibrated dispensing to improve seed placement and targeted watering.</p></article>
+      <article class="card"><div class="icon">🧱</div><h3>Rugged modular body</h3><p>Improve weather protection, tool mounting, service access and stability for the intended terrain.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">06 / Evaluation plan</span><h2>What should be tested?</h2></div>
+    <div class="grid">
+      <article class="card"><h3>Seed placement</h3><p>Measure seed spacing consistency and successful dispensing across repeated trials.</p></article>
+      <article class="card"><h3>Water delivery</h3><p>Measure flow rate and delivered volume over a defined time or area.</p></article>
+      <article class="card"><h3>Obstacle response</h3><p>Test detection distance, stopping response and repeatability under safe conditions.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap"><a class="toplink" href="#">Back to top ↑</a><strong>AGRI-BOT</strong><p>Multifunctional Agricultural Robot · Project reference page</p><p class="small">This page describes a project concept and planned functions. Do not treat performance claims as measured results unless supported by documented testing. Research papers remain the property of their respective authors and publishers.</p><p class="small">© AGRI-BOT project team. Update this page with your team's details, photos and verified test results before public release.</p></div></footer>
+</body>
+</html>
